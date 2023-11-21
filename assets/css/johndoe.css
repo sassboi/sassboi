@@ -11419,7 +11419,7 @@ pre .code {
   text-align: center;
 }
 
-.navbar .brand .brand-img {
+//*.navbar .brand .brand-img {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -11435,6 +11435,20 @@ pre .code {
   box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
   width: 170px;
   border-radius: 50%;
+}*//
+
+.navbar .brand .brand-img {
+  width: 50%; /* Adjust as necessary, or use max-width */
+  max-width: 170px; /* Keep the image from getting too large */
+}
+
+@media (max-width: 768px) {
+  .navbar .brand .brand-img {
+    width: 120px; /* Smaller size for smaller screens */
+    top: 10%; /* Adjust position for smaller screens */
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
 }
 
 .navbar .brand .brand-txt {
